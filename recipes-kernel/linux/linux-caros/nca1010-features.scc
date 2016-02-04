@@ -1,0 +1,17 @@
+kconf hardware bsp/common-pc/common-pc-wifi.cfg
+
+# activate standard features
+include cfg/smp.scc
+include cfg/dmaengine.scc
+include cfg/8250.scc
+include cfg/x86_64.scc
+include cfg/timer/hpet.scc
+include cfg/timer/rtc.scc
+
+include features/igb/igb.scc
+
+include features/intel-dpdk/intel-dpdk.scc
+include features/ciphers/ciphers.scc
+
+# Enable GCC inlining
+include features/inline/inline.scc
